@@ -1,0 +1,17 @@
+module clear_all (tick, state, x1, x2, x3, x4, x5, x6);
+	output reg [7:0] x1,x2,x3,x4,x5,x6;
+	input tick;
+	input [3:0] state;
+	always@(posedge tick)
+	begin
+		if(state==9)
+		begin
+			x1<=8'b11111111;
+			x2<=8'b11111111;
+			x3<=8'b11111111;
+			x4<=8'b11111111;
+			x5<=8'b11111111;
+			x6<=8'b11111111;
+		end
+	end
+endmodule 

@@ -1,0 +1,80 @@
+module print(input tick,
+				input [3:0] state,
+				output reg print_done,
+				input [6*5-1:0] phrase,
+				output reg [7:0] x1, x2, x3, x4, x5, x6); 
+				
+	parameter pentacode = {letters, operators, numbers, off};
+	parameter numbers = {s0, s9, s8, s7, s6, s5, s4, s3, s2, s1};
+	parameter operators = {eq, div, times, minus, plus};
+	parameter letters = {v, s, o, l, i_, h, e, c};
+
+	parameter off=8'b11111111;
+	
+	parameter s1= 8'b11111001;
+	parameter s2= 8'b10100100;
+	parameter s3= 8'b10110000;
+	parameter s4= 8'b10011001;
+	parameter s5= 8'b10010010;
+	parameter s6= 8'b10000010;
+	parameter s7= 8'b11111000;
+	parameter s8= 8'b10000000;
+	parameter s9= 8'b10010000;	
+	parameter s0= 8'b11000000;
+
+	parameter plus=8'b10001100;
+	parameter minus=8'b10111111;
+	parameter times=8'b10000111;
+	parameter div= 8'b10100001;
+	parameter eq=  8'b10110111; 
+	
+	parameter c = 8'b11000110;
+	parameter e = 8'b10000110;
+	parameter h = 8'b10001011;
+	parameter i_ =8'b11001111;
+	parameter l = 8'b11000111;
+	parameter o = 8'b10100011; //small
+	parameter s = 8'b10010010;
+	parameter v = 8'b11000001;
+	
+	parameter fixed_delay = 5*50_000_000;
+	reg[27:0] delay;
+	
+	function decode;
+		input [4:0]x;
+		decode = pentacode[8*x+:8];
+	endfunction
+	
+	/*
+	Decoding table:
+	input   output
+	--------------
+	0 	    off
+	1-9     1-9
+	10 	    0
+	11-15   +-* /=
+	16-23   cehilosv
+	*/
+	
+	always @(posedge tick)
+		if(state==0|state==2|state==6|state==8)
+			begin
+			if(delay==0)
+				print_done=1;
+			else
+				begin
+				x1<= decode(phrase[29:25]);
+				x2<= decode(phrase[24:20]);
+				x3<= decode(phrase[19:15]);
+				x4<= decode(phrase[14:10]);
+				x5<= decode(phrase[9:5]);
+				x6<= decode(phrase[4:0]);
+				delay<=delay-1;
+				end
+			end
+		else
+			begin
+			print_done<=0;
+			delay<=fixed_delay;
+			end
+endmodule

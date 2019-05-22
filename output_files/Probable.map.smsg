@@ -1,0 +1,4 @@
+Warning (10268): Verilog HDL information at generator.v(47): always construct contains both blocking and non-blocking assignments File: C:/Users/lujin/Downloads/Project/project/generator.v Line: 47
+Warning (10268): Verilog HDL information at main.v(150): always construct contains both blocking and non-blocking assignments File: C:/Users/lujin/Downloads/Project/project/main.v Line: 150
+Warning (10268): Verilog HDL information at print.v(76): always construct contains both blocking and non-blocking assignments File: C:/Users/lujin/Downloads/Project/project/print.v Line: 76
+Warning (10268): Verilog HDL information at keypadClock.v(9): always construct contains both blocking and non-blocking assignments File: C:/Users/lujin/Downloads/Project/project/keypadClock.v Line: 9

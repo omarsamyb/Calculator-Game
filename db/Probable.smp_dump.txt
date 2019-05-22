@@ -1,0 +1,7 @@
+
+State Machine - |Probable|respond:r|counter
+Name counter.11 counter.10 counter.01 counter.00 
+counter.00 0 0 0 0 
+counter.01 0 0 1 1 
+counter.10 0 1 0 1 
+counter.11 1 0 0 1 

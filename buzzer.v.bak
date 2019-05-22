@@ -1,0 +1,70 @@
+module buzzer (tick, state, buzzer, buz_done);
+	output reg buzz_done, buzz;
+	input tick;
+	input [3:0] state;
+	reg [27:0] count;
+	reg [27:0] stop;
+	
+	initial
+	begin
+		count=0;
+		stop=0;
+		buzz=1'b1;
+		buzz_done=1'b0;
+	end
+	
+	always @(posedge tick)
+	begin
+		if (~buzz_done)
+		begin
+			case(state)
+			3:
+				begin
+					count=count+1;
+					stop=stop+1;
+					if (stop==10)
+					begin
+						buzz_done=1'b1;
+						buzz=1'b0;
+					end
+					if (count%3 ==0 && ~buzz_done)
+					begin
+						count=0;
+						buzz=~buzz;
+					end
+				end
+			4:
+				begin
+					count=count+1;
+					stop=stop+1;
+					if (stop==10)
+					begin
+						buzz_done=1'b1;
+						buzz=1'b0;
+					end
+					if (count%6 ==0 && ~buzz_done)
+					begin
+						count=0;
+						buzz=~buzz;
+					end
+				end
+			5:
+				begin
+					count=count+1;
+					stop=stop+1;
+					if (stop==10)
+					begin
+						buzz_done=1'b1;
+						buzz=1'b0;
+					end
+					if (count%1 ==0 && ~buzz_done)
+					begin
+						count=0;
+						buzz=~buzz;
+					end
+				end
+			endcase
+		end
+	end
+endmodule
+	

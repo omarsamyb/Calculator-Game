@@ -1,0 +1,161 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'slow:s|tick'
+Slack : -59.484
+TNS   : -3096.029
+
+Type  : Slow 1200mV 85C Model Setup 'clk'
+Slack : -4.254
+TNS   : -115.810
+
+Type  : Slow 1200mV 85C Model Setup 'respond:r|keypadClock:k|tick'
+Slack : -1.630
+TNS   : -13.295
+
+Type  : Slow 1200mV 85C Model Setup 'level_in'
+Slack : -0.549
+TNS   : -1.068
+
+Type  : Slow 1200mV 85C Model Hold 'slow:s|tick'
+Slack : 0.330
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'respond:r|keypadClock:k|tick'
+Slack : 0.348
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'clk'
+Slack : 0.638
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'level_in'
+Slack : 1.026
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -84.374
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'level_in'
+Slack : -3.000
+TNS   : -5.806
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'start'
+Slack : -3.000
+TNS   : -4.403
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'slow:s|tick'
+Slack : -1.403
+TNS   : -324.093
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'respond:r|keypadClock:k|tick'
+Slack : -1.403
+TNS   : -18.239
+
+Type  : Slow 1200mV 0C Model Setup 'slow:s|tick'
+Slack : -53.872
+TNS   : -2823.978
+
+Type  : Slow 1200mV 0C Model Setup 'clk'
+Slack : -3.876
+TNS   : -100.528
+
+Type  : Slow 1200mV 0C Model Setup 'respond:r|keypadClock:k|tick'
+Slack : -1.406
+TNS   : -11.194
+
+Type  : Slow 1200mV 0C Model Setup 'level_in'
+Slack : -0.415
+TNS   : -0.801
+
+Type  : Slow 1200mV 0C Model Hold 'slow:s|tick'
+Slack : 0.295
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'respond:r|keypadClock:k|tick'
+Slack : 0.312
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'clk'
+Slack : 0.588
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'level_in'
+Slack : 0.939
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -84.374
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'level_in'
+Slack : -3.000
+TNS   : -5.806
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'start'
+Slack : -3.000
+TNS   : -4.403
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'slow:s|tick'
+Slack : -1.403
+TNS   : -324.093
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'respond:r|keypadClock:k|tick'
+Slack : -1.403
+TNS   : -18.239
+
+Type  : Fast 1200mV 0C Model Setup 'slow:s|tick'
+Slack : -23.140
+TNS   : -1178.700
+
+Type  : Fast 1200mV 0C Model Setup 'clk'
+Slack : -1.277
+TNS   : -15.563
+
+Type  : Fast 1200mV 0C Model Setup 'respond:r|keypadClock:k|tick'
+Slack : -0.125
+TNS   : -0.500
+
+Type  : Fast 1200mV 0C Model Setup 'level_in'
+Slack : 0.365
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'slow:s|tick'
+Slack : 0.144
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'respond:r|keypadClock:k|tick'
+Slack : 0.152
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clk'
+Slack : 0.245
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'level_in'
+Slack : 0.404
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -62.866
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'level_in'
+Slack : -3.000
+TNS   : -5.306
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'start'
+Slack : -3.000
+TNS   : -4.160
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'slow:s|tick'
+Slack : -1.000
+TNS   : -231.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'respond:r|keypadClock:k|tick'
+Slack : -1.000
+TNS   : -13.000
+
+------------------------------------------------------------

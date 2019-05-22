@@ -1,0 +1,12 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -vlog01compat -work work +incdir+C:/Users/lujin/Downloads/Probable\ with\ Pins {C:/Users/lujin/Downloads/Probable with Pins/generator.v}
+vlog -vlog01compat -work work +incdir+C:/Users/lujin/Downloads/Probable\ with\ Pins {C:/Users/lujin/Downloads/Probable with Pins/main.v}
+vlog -vlog01compat -work work +incdir+C:/Users/lujin/Downloads/Probable\ with\ Pins {C:/Users/lujin/Downloads/Probable with Pins/print.v}
+vlog -vlog01compat -work work +incdir+C:/Users/lujin/Downloads/Probable\ with\ Pins {C:/Users/lujin/Downloads/Probable with Pins/buzzer.v}
+

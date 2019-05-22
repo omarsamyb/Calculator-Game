@@ -1,0 +1,93 @@
+module respond(input tick,
+              input COL1, COL2, COL3, 
+              input ROW1, ROW2, ROW3, ROW4,
+              output reg [4:0] number);
+				  
+  reg c1, c2, c3, r1, r2, r3, r4;
+  reg read;
+
+	initial 
+		begin
+			read = 0;
+			number = 0;
+			c1 = 1;
+			c2 = 1;
+			c3 = 1;
+			r1 = 1;
+			r2 = 1;
+			r3 = 1;
+			r4 = 1;
+		end
+
+	always @ (COL1 or COL2 or COL3)
+		begin
+			c1 <= COL1;
+			c2 <= COL2;
+			c3 <= COL3;
+			r1 <= ROW1;
+			r2 <= ROW2;
+			r3 <= ROW3;
+			r4 <= ROW4;
+			read <= 0;
+		end
+
+	always @ (posedge tick)
+		begin
+			if(read == 0 && r1 == 0)
+				if(c1 == 0)
+					begin
+						number = 4'b0001;
+						read <= 1;
+					end
+				else if(c2 == 0)
+					begin
+						number = 4'b0010;
+						read <= 1;
+					end
+				else if(c3 == 0)
+					begin
+						number = 4'b0011;
+						read <= 1;
+					end
+		
+			if(read == 0 && r2 == 0)
+				if(c1 == 0)
+					begin
+						number = 4'b0100;
+						read <= 1;
+					end
+				else if(c2 == 0)
+					begin
+						number = 4'b0101;
+						read <= 1;
+					end
+				else if(c3 == 0)
+					begin
+						number = 4'b0110;
+						read <= 1;
+					end
+
+			if(read == 0 && r3 == 0)
+				if(c1 == 0)
+					begin
+						number = 4'b0111;
+						read <= 1;
+					end
+				else if(c2 == 0)
+					begin
+						number = 4'b1000;
+						read <= 1;
+					end
+				else if(c3 == 0)
+					begin
+						number = 4'b1001;
+						read <= 1;
+					end	
+
+			if(read == 0 && r4==0 && c2 == 0)
+				begin
+					number = 4'b0000;
+					read <= 1;
+				end
+		end
+endmodule

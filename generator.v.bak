@@ -1,0 +1,73 @@
+module generator(	input tick,
+					input [3:0] state,
+					output reg gen_done,
+					input [2:0] level,
+					output reg [30:0] phrase, //! cap at 6 characters 
+					output reg [16:0] result,
+					input [27:0] counter);
+	
+	reg [7:0] operand1, operand2;	
+	reg [1:0] operator;
+	
+	function [7:0] pesudoRandomGen;
+		input [27:0] seed;
+		begin
+			seed = seed * seed;
+			pesudoRandomGen = seed[17:10];
+		end
+	endfunction
+	
+	
+	function [7:0] digitRandomizer;
+		input [2:0] numOfDigits;
+		input [27:0] seed;
+      begin
+		digitRandomizer=pesudoRandomGen(seed) % (8**numOfDigits);
+      end
+	endfunction
+	
+	function [1:0] operatorRandomizer;
+		input [2:0] level;
+		input [27:0] seed;
+		reg numOfOperators;
+      begin
+		case (level)
+			1: numOfOperators = 2;
+			2: numOfOperators = 4;
+			3: numOfOperators = 4;
+		endcase
+		operatorRandomizer = pesudoRandomGen(seed) % numOfOperators;
+      end
+	endfunction
+	
+	always @ (posedge tick)
+		if (state==1) //! add other states
+			begin
+			operand1 = digitRandomizer(level, counter);	
+			operand2 = digitRandomizer(level, operand1);
+			operator = operatorRandomizer(level, operand2);
+			
+			case (operator)
+				1: result = operand1 + operand2;
+				2: result = operand1 - operand2;
+				3: result = operand1 * operand2;
+				4: result = operand1 / operand2;
+			endcase
+			//! reg size and 0 crisis
+			/*phrase [31:28] = (operand1/100);
+			phrase [27:24] = (operand1/10)%10;
+			phrase [23:20] = (operand1%10);
+			phrase [19:16] = 10 + operator;
+			phrase [15:12] = (operand2/100);
+			phrase [11:8] = (operand2/10)%10; 
+			phrase [7:4] = (operand2%10);
+			phrase [3:0] = 10;*/
+			
+			gen_done<=1;
+			
+			end
+		else
+			begin
+			gen_done<=0;
+			end
+endmodule

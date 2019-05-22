@@ -1,0 +1,124 @@
+# do Probable_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim ALTERA vmap 10.4b Lib Mapping Utility 2015.05 May 27 2015
+# vmap -modelsim_quiet work rtl_work 
+# Copying C:/altera_lite/15.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:/altera_lite/15.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/lujin/Downloads/Probable\ with\ Pins {C:/Users/lujin/Downloads/Probable with Pins/generator.v}
+# Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+# Start time: 21:16:55 on Dec 06,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/lujin/Downloads/Probable with Pins" C:/Users/lujin/Downloads/Probable with Pins/generator.v 
+# -- Compiling module generator
+# 
+# Top level modules:
+# 	generator
+# End time: 21:16:55 on Dec 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/lujin/Downloads/Probable\ with\ Pins {C:/Users/lujin/Downloads/Probable with Pins/main.v}
+# Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+# Start time: 21:16:55 on Dec 06,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/lujin/Downloads/Probable with Pins" C:/Users/lujin/Downloads/Probable with Pins/main.v 
+# -- Compiling module Probable
+# -- Compiling module slow
+# 
+# Top level modules:
+# 	Probable
+# End time: 21:16:55 on Dec 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/lujin/Downloads/Probable\ with\ Pins {C:/Users/lujin/Downloads/Probable with Pins/print.v}
+# Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+# Start time: 21:16:55 on Dec 06,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/lujin/Downloads/Probable with Pins" C:/Users/lujin/Downloads/Probable with Pins/print.v 
+# -- Compiling module print
+# ** Error: C:/Users/lujin/Downloads/Probable with Pins/print.v(8): (vlog-2730) Undefined variable: 'letters'.
+# 
+# ** Error: C:/Users/lujin/Downloads/Probable with Pins/print.v(8): (vlog-2730) Undefined variable: 'operators'.
+# 
+# ** Error: C:/Users/lujin/Downloads/Probable with Pins/print.v(8): (vlog-2730) Undefined variable: 'off'.
+# 
+# ** Error: C:/Users/lujin/Downloads/Probable with Pins/print.v(8): (vlog-2730) Undefined variable: 'numbers'.
+# 
+# ** Error: C:/Users/lujin/Downloads/Probable with Pins/print.v(9): (vlog-2730) Undefined variable: 's9'.
+# 
+# ** Error: C:/Users/lujin/Downloads/Probable with Pins/print.v(9): (vlog-2730) Undefined variable: 's8'.
+# 
+# ** Error: C:/Users/lujin/Downloads/Probable with Pins/print.v(9): (vlog-2730) Undefined variable: 's7'.
+# 
+# ** Error: C:/Users/lujin/Downloads/Probable with Pins/print.v(9): (vlog-2730) Undefined variable: 's6'.
+# 
+# ** Error: C:/Users/lujin/Downloads/Probable with Pins/print.v(9): (vlog-2730) Undefined variable: 's5'.
+# 
+# ** Error: C:/Users/lujin/Downloads/Probable with Pins/print.v(9): (vlog-2730) Undefined variable: 's4'.
+# 
+# ** Error: C:/Users/lujin/Downloads/Probable with Pins/print.v(9): (vlog-2730) Undefined variable: 's3'.
+# 
+# ** Error: C:/Users/lujin/Downloads/Probable with Pins/print.v(9): (vlog-2730) Undefined variable: 's2'.
+# 
+# ** Error: C:/Users/lujin/Downloads/Probable with Pins/print.v(9): (vlog-2730) Undefined variable: 's1'.
+# 
+# ** Error: C:/Users/lujin/Downloads/Probable with Pins/print.v(9): (vlog-2730) Undefined variable: 's0'.
+# 
+# ** Error: C:/Users/lujin/Downloads/Probable with Pins/print.v(9): 'numbers' already declared in this scope.
+# ** Error: C:/Users/lujin/Downloads/Probable with Pins/print.v(10): (vlog-2730) Undefined variable: 'eq'.
+# 
+# ** Error: C:/Users/lujin/Downloads/Probable with Pins/print.v(10): (vlog-2730) Undefined variable: 'div'.
+# 
+# ** Error: C:/Users/lujin/Downloads/Probable with Pins/print.v(10): (vlog-2730) Undefined variable: 'times'.
+# 
+# ** Error: C:/Users/lujin/Downloads/Probable with Pins/print.v(10): (vlog-2730) Undefined variable: 'minus'.
+# 
+# ** Error: C:/Users/lujin/Downloads/Probable with Pins/print.v(10): (vlog-2730) Undefined variable: 'plus'.
+# 
+# ** Error: C:/Users/lujin/Downloads/Probable with Pins/print.v(10): 'operators' already declared in this scope.
+# ** Error: C:/Users/lujin/Downloads/Probable with Pins/print.v(11): (vlog-2730) Undefined variable: 'y'.
+# 
+# ** Error: C:/Users/lujin/Downloads/Probable with Pins/print.v(11): (vlog-2730) Undefined variable: 't'.
+# 
+# ** Error: C:/Users/lujin/Downloads/Probable with Pins/print.v(11): (vlog-2730) Undefined variable: 's'.
+# 
+# ** Error: C:/Users/lujin/Downloads/Probable with Pins/print.v(11): (vlog-2730) Undefined variable: 'r'.
+# 
+# ** Error: C:/Users/lujin/Downloads/Probable with Pins/print.v(11): (vlog-2730) Undefined variable: 'e'.
+# 
+# ** Error: C:/Users/lujin/Downloads/Probable with Pins/print.v(11): (vlog-2730) Undefined variable: 'b'.
+# 
+# ** Error: C:/Users/lujin/Downloads/Probable with Pins/print.v(11): (vlog-2730) Undefined variable: 'a'.
+# 
+# ** Error: C:/Users/lujin/Downloads/Probable with Pins/print.v(11): 'letters' already declared in this scope.
+# ** Error: C:/Users/lujin/Downloads/Probable with Pins/print.v(13): 'off' already declared in this scope.
+# ** Error: C:/Users/lujin/Downloads/Probable with Pins/print.v(15): 's1' already declared in this scope.
+# ** Error: C:/Users/lujin/Downloads/Probable with Pins/print.v(16): 's2' already declared in this scope.
+# ** Error: C:/Users/lujin/Downloads/Probable with Pins/print.v(17): 's3' already declared in this scope.
+# ** Error: C:/Users/lujin/Downloads/Probable with Pins/print.v(18): 's4' already declared in this scope.
+# ** Error: C:/Users/lujin/Downloads/Probable with Pins/print.v(19): 's5' already declared in this scope.
+# ** Error: C:/Users/lujin/Downloads/Probable with Pins/print.v(20): 's6' already declared in this scope.
+# ** Error: C:/Users/lujin/Downloads/Probable with Pins/print.v(21): 's7' already declared in this scope.
+# ** Error: C:/Users/lujin/Downloads/Probable with Pins/print.v(22): 's8' already declared in this scope.
+# ** Error: C:/Users/lujin/Downloads/Probable with Pins/print.v(23): 's9' already declared in this scope.
+# ** Error: C:/Users/lujin/Downloads/Probable with Pins/print.v(24): 's0' already declared in this scope.
+# ** Error: C:/Users/lujin/Downloads/Probable with Pins/print.v(26): 'plus' already declared in this scope.
+# ** Error: C:/Users/lujin/Downloads/Probable with Pins/print.v(27): 'minus' already declared in this scope.
+# ** Error: C:/Users/lujin/Downloads/Probable with Pins/print.v(28): 'times' already declared in this scope.
+# ** Error: C:/Users/lujin/Downloads/Probable with Pins/print.v(29): 'div' already declared in this scope.
+# ** Error: C:/Users/lujin/Downloads/Probable with Pins/print.v(30): 'eq' already declared in this scope.
+# ** Error: C:/Users/lujin/Downloads/Probable with Pins/print.v(32): 'a' already declared in this scope.
+# ** Error: C:/Users/lujin/Downloads/Probable with Pins/print.v(33): 'b' already declared in this scope.
+# ** Error: C:/Users/lujin/Downloads/Probable with Pins/print.v(34): 'e' already declared in this scope.
+# ** Error: C:/Users/lujin/Downloads/Probable with Pins/print.v(35): 'r' already declared in this scope.
+# ** Error: C:/Users/lujin/Downloads/Probable with Pins/print.v(36): 's' already declared in this scope.
+# ** Error: C:/Users/lujin/Downloads/Probable with Pins/print.v(37): 't' already declared in this scope.
+# ** Error: C:/Users/lujin/Downloads/Probable with Pins/print.v(38): 'y' already declared in this scope.
+# End time: 21:16:56 on Dec 06,2018, Elapsed time: 0:00:01
+# Errors: 52, Warnings: 0
+# ** Error: C:/altera_lite/15.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./Probable_run_msim_rtl_verilog.do line 10
+# C:/altera_lite/15.1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog -vlog01compat -work work +incdir+C:/Users/lujin/Downloads/Probable\ with\ Pins {C:/Users/lujin/Downloads/Probable with Pins/print.v}"

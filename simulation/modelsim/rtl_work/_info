@@ -1,0 +1,74 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/lujin/Downloads/Probable with Pins/simulation/modelsim
+vgenerator
+Z1 !s110 1544123815
+!i10b 1
+!s100 @cWQ70@h^`kIF2k;EOl0Y0
+IRkNM4]3EkCL_N;Rh:=E2O3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1544123439
+8C:/Users/lujin/Downloads/Probable with Pins/generator.v
+FC:/Users/lujin/Downloads/Probable with Pins/generator.v
+L0 1
+Z3 OV;L;10.4b;61
+r1
+!s85 0
+31
+Z4 !s108 1544123815.000000
+!s107 C:/Users/lujin/Downloads/Probable with Pins/generator.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lujin/Downloads/Probable with Pins|C:/Users/lujin/Downloads/Probable with Pins/generator.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work {+incdir+C:/Users/lujin/Downloads/Probable with Pins}
+vProbable
+R1
+!i10b 1
+!s100 >?G2J`^N:>Jjjd@hM7ChC1
+IgDB_:=M1]5W3lgZGGWYf_2
+R2
+R0
+Z7 w1544122647
+Z8 8C:/Users/lujin/Downloads/Probable with Pins/main.v
+Z9 FC:/Users/lujin/Downloads/Probable with Pins/main.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+Z10 !s107 C:/Users/lujin/Downloads/Probable with Pins/main.v|
+Z11 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lujin/Downloads/Probable with Pins|C:/Users/lujin/Downloads/Probable with Pins/main.v|
+!i113 1
+R5
+R6
+n@probable
+vslow
+R1
+!i10b 1
+!s100 ngX`[T7F8EmQjIJM2dC253
+IL68a0;ODLd^[4`3XD=ozH1
+R2
+R0
+R7
+R8
+R9
+L0 119
+R3
+r1
+!s85 0
+31
+R4
+R10
+R11
+!i113 1
+R5
+R6
